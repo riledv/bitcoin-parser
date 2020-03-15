@@ -1,0 +1,15 @@
+{
+    "name": "parser",
+    "version": "0.0.1",
+    "description": "bitcoin's price parser",
+    "scripts": {
+        "start": "node ./src/app.js",
+        "dev": "nodemon ./src/app.js"
+    },
+    "dependencies": {
+        "node-html-parser": "^1.2.12"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
