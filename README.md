@@ -1,4 +1,4 @@
-# bitcoins-price-parser
+# Bitcoins rate parser
 Парсер курса биткоина в обменнике и на бирже
 
 Попробовать бота в телеграмме: <code>**@coinRateParserBot**</code>
