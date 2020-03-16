@@ -173,7 +173,7 @@ function getPriceByCountry (jsonWithPrices, targetCountry) {
 };
 
 // routing
-bot.onText(/\/start/, async (msg) => {
+bot.onText(/\/start|\/help/, async (msg) => {
     // console.log('msg', msg.from.id);
     const startData = [
         {
@@ -200,6 +200,7 @@ bot.onText(/\/start/, async (msg) => {
 bot.onText(/\/rate/, async (msg) => {
     const { exchangeCoinRate, realCoinRate } = await getRealAndExchangeRate();
     const chatId = msg.chat.id;
+    users.add(msg.from.id);
 
     bot.sendMessage(chatId,
         rateView('Курс биткоина на бирже: ', realCoinRate)
@@ -211,6 +212,7 @@ bot.onText(/\/rate/, async (msg) => {
 bot.onText(/\/realrate/, async (msg) => {
     const realCoinRate = await getRealRate();
     const chatId = msg.chat.id;
+    users.add(msg.from.id);
     
     bot.sendMessage(chatId,
         rateView('Курс биткоина на бирже: ', realCoinRate)
@@ -220,6 +222,7 @@ bot.onText(/\/realrate/, async (msg) => {
 bot.onText(/\/exchangerate/, async (msg) => {
     const exchangeCoinRate = await getExchangeRate();
     const chatId = msg.chat.id;
+    users.add(msg.from.id);
 
     bot.sendMessage(chatId,
         rateView('Курс биткоина в обменниках: ', exchangeCoinRate)
