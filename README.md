@@ -22,11 +22,11 @@ botToken = <токен вашего бота>
 <br />
 proxySocks5Host = <хост вашего прокси socks5>
 <br />
-proxyPort = <порт на хосте для прокси socks5>
+proxyPort = <порт на хосте>
 <br />
-proxyUsername = <имя пользователя для прокси socks5>
+proxyUsername = <имя пользователя>
 <br />
-proxyPassword = <пароль пользователя для прокси socks5>
+proxyPassword = <пароль пользователя>
 <br />
 <br />
 Затем в консоли введите команду: <code>npm run start</code>
