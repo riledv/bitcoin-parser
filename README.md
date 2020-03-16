@@ -16,9 +16,13 @@
 и замените значения переменных на ваши
 <br />
 botToken = <токен вашего бота>
+<br />
 proxySocks5Host = <хост вашего бота>
+<br />
 proxyPort = <порт на хосте>
+<br />
 proxyUsername = <имя пользователя>
+<br />
 proxyPassword = <пароль>
 
 Затем команду: <code>npm run start</code>
