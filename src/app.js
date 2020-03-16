@@ -5,7 +5,7 @@ const Agent = require('socks5-https-client/lib/Agent');
 const processDotEnv = require('dotenv').config();
 
 // #todo если цена упала до минимума, минимум уменьшается на subtractionStepFromMin
-// #todo подключить базу ждя сохраниения айдишек пользователей
+// #todo подключить базу для сохраниения айдишек пользователей
 // #todo после сохранения айдишек пользователей можно будет
 // организовать exchangeMin, realMin, priceCheckRetryTime, subtractionStepFromMin для
 // каждого свои.
