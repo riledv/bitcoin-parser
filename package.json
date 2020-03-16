@@ -4,10 +4,13 @@
     "description": "bitcoin's price parser",
     "scripts": {
         "start": "node ./src/app.js",
-        "dev": "nodemon ./src/app.js"
+        "dev": "nodemon ./src/app.js && kill -9 $(lsof -i :9412)"
     },
     "dependencies": {
-        "node-html-parser": "^1.2.12"
+        "dotenv": "^8.2.0",
+        "node-html-parser": "^1.2.12",
+        "node-telegram-bot-api": "^0.40.0",
+        "socks5-https-client": "^1.2.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.2"
