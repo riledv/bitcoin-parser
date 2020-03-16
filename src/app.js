@@ -112,8 +112,6 @@ setInterval(
 async function getAlertIfPriceHasFallen () {
     const { exchangeCoinRate, realCoinRate } = await getRealAndExchangeRate();
 
-    console.log('P', processDotEnv)
-
     users.forEach((userId) => {
         if (exchangeCoinRate < preferences.exchangeMin) {
             bot.sendMessage(userId,
