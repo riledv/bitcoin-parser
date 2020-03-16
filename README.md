@@ -20,13 +20,13 @@
 ##### Файл .env должен содержать:
 botToken = <токен вашего бота>
 <br />
-proxySocks5Host = <хост вашего бота>
+proxySocks5Host = <хост вашего прокси socks5>
 <br />
-proxyPort = <порт на хосте>
+proxyPort = <порт на хосте для прокси socks5>
 <br />
-proxyUsername = <имя пользователя>
+proxyUsername = <имя пользователя для прокси socks5>
 <br />
-proxyPassword = <пароль>
+proxyPassword = <пароль пользователя для прокси socks5>
 <br />
 <br />
 Затем в консоли введите команду: <code>npm run start</code>
