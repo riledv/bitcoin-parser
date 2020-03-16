@@ -29,6 +29,6 @@ proxyUsername = <имя пользователя>
 proxyPassword = <пароль>
 <br />
 <br />
-Затем команду: <code>npm run start</code>
+Затем в консоли введите команду: <code>npm run start</code>
 <br />
 Для разработки используется команда npm run dev, которая запускает авторелоад при изменениях в файлах
